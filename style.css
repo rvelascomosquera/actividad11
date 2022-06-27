@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+:root {
+  --color-text: rgba(5, 5, 5, 0.575);
+  --color-border: rgba(0, 0, 0, 0.432);
+  --color-button: #2e63b8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -46,14 +52,15 @@ h4 {
 
 .password {
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.432);
+  border: 1px solid var(--color-border);
   display: flex;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .password__show {
-  margin: auto;
+  margin: auto 0;
+  padding: 0 15px;
   color: #2D64BC;
 }
 
@@ -66,7 +73,7 @@ a {
 input {
   font-size: 1.1em;
   padding: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.432);
+  border: 1px solid var(--color-border);
   border-radius: 5px;
 }
 
@@ -83,16 +90,16 @@ input {
 }
 
 .login__button {
-  border: 1px solid rgba(0, 0, 0, 0.432);
+  border: 1px solid var(--color-border);
   border-radius: 30px;
-  color: rgba(5, 5, 5, 0.575);
+  color: var(--color-text);
   padding: 12px; 
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
 .button--color {
-  background-color:#2D64BC ;
+  background-color:var(--color-button);
   color: white;
   border: none;
   text-align: center;
@@ -114,7 +121,7 @@ input {
 p {
 display: inline-block;
 position: relative;
-color: rgba(0, 0, 0, 0.432);
+color: var(--color-border);
 padding: 0 8px;
 }
 
@@ -134,4 +141,3 @@ p::after{
 p::before{
   right: -14vw;
 }
- 
